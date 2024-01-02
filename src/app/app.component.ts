@@ -9,16 +9,17 @@ import {
   SmallCardComponent
  } from './components/index'
 
+ import {
+  HomeComponent
+ } from './pages/index'
+
 @Component({
   selector: "app-root",
   standalone: true,
   imports: [
     CommonModule,
     RouterOutlet,
-    BigCardComponent,
-    MenuBarComponent,
-    MenuTitleComponent,
-    SmallCardComponent,
+    HomeComponent,
   ],
   templateUrl: "./app.component.html",
   styleUrl: "./app.component.css",

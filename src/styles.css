@@ -5,4 +5,11 @@
     padding: 0;
     background-color: #111111;
     box-sizing: 'border-box';
+    color: white;
+    font-family: 'Segoe UI', Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
