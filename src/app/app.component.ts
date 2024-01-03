@@ -1,17 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterModule } from "@angular/router";
 
-import {
-  BigCardComponent,
-  MenuBarComponent,
-  MenuTitleComponent,
-  SmallCardComponent
- } from './components/index'
-
- import {
-  HomeComponent
- } from './pages/index'
+import { MenuBarComponent } from "./components/index";
 
 @Component({
   selector: "app-root",
@@ -19,7 +10,8 @@ import {
   imports: [
     CommonModule,
     RouterOutlet,
-    HomeComponent,
+    RouterModule,
+    MenuBarComponent,
   ],
   templateUrl: "./app.component.html",
   styleUrl: "./app.component.css",

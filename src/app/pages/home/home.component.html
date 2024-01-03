@@ -1,14 +1,27 @@
-<header>
-    <app-menu-bar></app-menu-bar>
-</header>
 <app-menu-title></app-menu-title>
 
 <div class="container__articles">
     <div class="articles__main">
-        <app-big-card></app-big-card>
+        <app-big-card
+            cardId="1"
+            [photoCover]="'https://th.bing.com/th/id/OIP.I9kHMrHLYEryMFQbrdPhkQHaDr?rs=1&pid=ImgDetMain'"
+            [cardTitle]="'Saiu a nova versão do Angular'"
+            [cardDescription]="'O Angular 9 está disponível agora! Esta é uma nova grande versão que inclui o ivy por padrão, melhorando o tamanho do pacote e o tempo de inicialização. O novo compilador e o runtime de renderização, o Ivy, trazem melhorias significativas para o tamanho do pacote, o tempo de inicialização e o desempenho de execução.'"
+        ></app-big-card>
     </div>
     <div class="articles__others">
-        <app-small-card></app-small-card>
-        <app-small-card></app-small-card>
+        <app-small-card
+            cardId="2"
+            [cardCover]="
+                'https://picsum.photos/seed/picsum/100'"
+            [cardTitle]="'Saiu a nova versão do Angular'"
+        ></app-small-card>
+
+        <app-small-card
+            cardId="3"
+            [cardCover]="
+                'https://picsum.photos/seed/picsum/200'"
+            [cardTitle]="'Novas tecnologias para 2024!'"
+        ></app-small-card>
     </div>
 </div>
